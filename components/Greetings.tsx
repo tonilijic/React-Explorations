@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import dynamic from "next/dynamic";
 
 const Greetings = ({ color = "" }) => {
-  const greetings = useMemo(() => ["Hi,", "Bok,", "Grüezi,", "Ciao,"], []);
+  const greetings = useMemo(() => ["Text1,", "Text2,", "Text3,", "Text4,"], []);
   const [greeting, setGreeting] = useState(
     () => greetings[Math.floor(Math.random() * greetings.length)]
   );

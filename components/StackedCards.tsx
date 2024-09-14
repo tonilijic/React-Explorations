@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence, useInView } from "framer-motion";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import Link from "next/link";
 
 interface CardProps {
   imageSrc: string;
@@ -18,72 +17,17 @@ const Card: React.FC<CardProps> = ({ imageSrc, alt }) => (
 const initialCards = [
   {
     id: 1,
-    imageSrc: "/assets/images/cycling.jpg",
+    imageSrc: "/image/path",
     alt: "",
-    title: "Cycling",
-    description: (
-      <>
-        Started wearing tight jerseys, lost few kilos, and made some{" "}
-        <Link
-          href="https://www.strava.com/"
-          className=" hover:text-toni-accent-light dark:hover:text-toni-accent-dark  text-toni-text-light dark:text-toni-text-dark underline underline-offset-4 decoration-1 decoration-toni-label-light dark:decoration-toni-label-dark transition-colors duration-400 ease-in-out hover:decoration-toni-accent-light dark:hover:decoration-toni-accent-dark"
-        >
-          Strava
-        </Link>{" "}
-        friends along the way.
-      </>
-    ),
+    title: "Title",
+    description: <>Text</>,
   },
   {
     id: 2,
-    imageSrc: "/assets/images/tcg.JPG",
+    imageSrc: "/image/path",
     alt: "",
-    title: "TCG",
-    description:
-      "Passionately collecting Yu-Gi-Oh cards. Especially ultimate rares from GX and 5Ds era.",
-  },
-  {
-    id: 3,
-    imageSrc: "/assets/images/hiking.JPG",
-    alt: "",
-    title: "Hiking",
-    description:
-      "'Wandern' as Swiss say, is my favorite summer activity. Especially if there's a mountain lake on top.",
-  },
-  {
-    id: 4,
-    imageSrc: "/assets/images/coding.jpg",
-    alt: "",
-    title: "Coding",
-    description:
-      "I pretend that I know how to code. Love experimenting with SwiftUI and React in my free time.",
-  },
-  {
-    id: 5,
-    imageSrc: "/assets/images/guitar.jpg",
-    alt: "",
-    title: "Guitar",
-    description:
-      "Parents didn't let me play drumms so I picked up guitar. Still dreaming of joining a metal band.",
-  },
-  {
-    id: 6,
-    imageSrc: "/assets/images/illustration.jpg",
-    alt: "",
-    title: "Drawing",
-    description: (
-      <>
-        Like many, I started drawing as a kid, but haven’t stopped. I used to
-        post my work on{" "}
-        <Link
-          href="https://www.youtube.com/@tonilijic"
-          className=" hover:text-toni-accent-light dark:hover:text-toni-accent-dark  text-toni-text-light dark:text-toni-text-dark underline underline-offset-4 decoration-1 decoration-toni-label-light dark:decoration-toni-label-dark transition-colors duration-400 ease-in-out hover:decoration-toni-accent-light dark:hover:decoration-toni-accent-dark"
-        >
-          Youtube
-        </Link>{" "}
-        .
-      </>
-    ),
+    title: "Title",
+    description: <>Text</>,
   },
 ].sort((a, b) => b.id - a.id);
 
